@@ -208,6 +208,7 @@ h4 {
 @media (min-width: 900px) {
     .heading {
         font-size: 1.25em;
+        max-height: 1200px;
     }
 
     .section-1 h2 {
