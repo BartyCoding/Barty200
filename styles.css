@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+body {
+    margin-bottom: 7.5em;
+}
+
 nav {
     width: 100vw;
     max-width: 100%;
@@ -94,7 +98,7 @@ nav ul li a:hover {
 
 .section {
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     max-width: 100%;
 }
@@ -142,6 +146,7 @@ p {
     border: 1px solid rgba(100, 100, 100, 0.25);
     width: 90vw;
     height: auto;
+    box-shadow: 0px 5px 30px rgba(100, 100, 100, 0.25);
 }
 
 .table-item {
@@ -188,6 +193,60 @@ h4 {
     margin-bottom: 2em;
 }
 
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.section-3 p {
+    color: black;
+    margin-bottom: 4em;
+}
+
+.recent-work-container {
+    width: 100%;
+    max-width: 2000px;
+    height: 105em;
+    padding: 0 10vw;
+    display: grid;
+    grid-gap: 2em;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+        ;
+}
+
+.recent-work-item {
+    background-color: #7510F7;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 3em;
+}
+
+.recent-work-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 700px) {
     .heading-text {
         font-size: 1em;
@@ -202,6 +261,16 @@ h4 {
         display: inline-block;
         margin-left: 40px;
     }
+
+    .recent-work-container {
+        grid-template-areas: 
+            "item1 item3"
+            "item1 item2"
+            "item4 item2"
+        ;
+        height: 52.5em;
+    }
+    
 }
 
 
@@ -225,11 +294,21 @@ h4 {
 
     .table-item {
         padding: 1em 2em 3em;
+        width: 33%;
+        height: 100%;
         border: none;
         border-right: 1px solid rgba(100, 100, 100, 0.25);
     }
 
     .table-item:nth-last-of-type(1) {
         border: none;
+    }
+
+    .recent-work-container {
+        grid-template-areas: 
+            "item1 item1 item3"
+            "item4 item2 item2"
+        ;
+        height: 35em;
     }
 }
