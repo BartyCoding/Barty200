@@ -47,7 +47,7 @@ nav ul li a:hover {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 750px;
+    height: 100vh;
     min-height: 750px;
     max-height: 900px;
     display: flex;
@@ -56,17 +56,10 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    height: 70%;
-}
-
 .heading-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 50%;
@@ -111,8 +104,9 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     overflow: visible;
-    height: 30em;
+    height: auto;
     background-color: #7510F7;
+    padding-bottom: 12.5em;
 }
 
 .section-1 h2 {
@@ -218,10 +212,6 @@ h4 {
 
     .section-1 h2 {
         font-size: 1.75em;
-    }
-
-    .section-1 {
-        height: 60vh;
     }
 
     .section-1 p {
