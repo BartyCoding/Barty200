@@ -51,8 +51,9 @@ nav ul li a:hover {
     min-height: 750px;
     max-height: 900px;
     display: flex;
-    justify-content: center;
-    align-items: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container {
@@ -94,7 +95,7 @@ nav ul li a:hover {
     z-index: -1;
     max-width: 550px;
     width: 100vw;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
 }
 
