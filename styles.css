@@ -212,7 +212,7 @@ h4 {
     max-width: 1000px;
     width: 100%;
     padding: 1em 1em;
-    
+    margin-bottom: 3em;
 }
 
 .recent-work-item {
@@ -242,6 +242,11 @@ footer {
     height: 0;
     width: 100vw;
     max-width: 100%;
+}
+
+hr {
+    border-color: rgba(155, 155, 155, 0.15);
+
 }
 
 @media (min-width: 700px) {
