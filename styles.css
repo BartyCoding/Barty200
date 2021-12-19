@@ -285,6 +285,38 @@ hr {
 
 }
 
+.code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code * {
+    padding: 0.5em 2em;
+    margin: 0.5em 0.5em 5em;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.code button {
+    font-weight: 600;
+    color: white;
+    background-color: #7510F7;
+    border: none;
+}
+
+.code input {
+    border: 1px solid #333;
+}
+
+.code input:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (min-width: 700px) {
     .heading-text {
         font-size: 1em;
