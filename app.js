@@ -3,8 +3,8 @@ const input = document.getElementById("input-box")
 const container = document.getElementById("container")
 
 const secretCode = "Hello!"
-
-button.addEventListener("click", () => {
+try{
+  button.addEventListener("click", () => {
     if (input.value === "hi there") {
         console.log("guessed value")
         button.classList.add("hidden")
@@ -21,3 +21,27 @@ button.addEventListener("click", () => {
         container.appendChild(text)
     }
 })
+} catch
+{
+  
+}
+
+
+const icon = document.getElementById("hamburger-icon");
+const navMain = document.getElementById("nav-main");
+
+let down = false
+
+console.dir(icon)
+
+icon.onclick = () => {
+    if (down) {
+        down = false
+        navMain.classList.remove("expanded")
+    }
+    else {
+        down = true
+        navMain.classList.add("expanded")
+    }
+}
+
